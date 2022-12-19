@@ -20,6 +20,13 @@
 		42CDCBFD2950D9C200B88089 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 42CDCBFC2950D9C200B88089 /* FirebaseFirestore */; };
 		42CDCBFF2950D9C200B88089 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42CDCBFE2950D9C200B88089 /* FirebaseFirestoreSwift */; };
 		42CDCC012950D9C200B88089 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 42CDCC002950D9C200B88089 /* FirebaseStorage */; };
+		42CDCC042950DB8200B88089 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CDCC032950DB8200B88089 /* AuthService.swift */; };
+		42CDCC072950DCDA00B88089 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CDCC062950DCDA00B88089 /* UserData.swift */; };
+		42CDCC0A2950DEFE00B88089 /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CDCC092950DEFE00B88089 /* RegistrationService.swift */; };
+		42CDCC0C2950E01600B88089 /* LocalImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CDCC0B2950E01600B88089 /* LocalImage.swift */; };
+		42CDCC0E2950E0AD00B88089 /* StorageImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CDCC0D2950E0AD00B88089 /* StorageImage.swift */; };
+		42CDCC102950E0F900B88089 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CDCC0F2950E0F900B88089 /* ImageService.swift */; };
+		42CDCC122950E42800B88089 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CDCC112950E42800B88089 /* StorageService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		42CDCBE62950D88B00B88089 /* MelonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelonUITests.swift; sourceTree = "<group>"; };
 		42CDCBE82950D88B00B88089 /* MelonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelonUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		42CDCBF52950D8E100B88089 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		42CDCC032950DB8200B88089 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		42CDCC062950DCDA00B88089 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		42CDCC092950DEFE00B88089 /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
+		42CDCC0B2950E01600B88089 /* LocalImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalImage.swift; sourceTree = "<group>"; };
+		42CDCC0D2950E0AD00B88089 /* StorageImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageImage.swift; sourceTree = "<group>"; };
+		42CDCC0F2950E0F900B88089 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		42CDCC112950E42800B88089 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +120,9 @@
 		42CDCBCA2950D88A00B88089 /* Melon */ = {
 			isa = PBXGroup;
 			children = (
+				42CDCC082950DEE100B88089 /* ViewModels */,
+				42CDCC022950DA9500B88089 /* Services */,
+				42CDCC052950DCC600B88089 /* Models */,
 				42CDCBCB2950D88A00B88089 /* MelonApp.swift */,
 				42CDCBCD2950D88A00B88089 /* ContentView.swift */,
 				42CDCBCF2950D88B00B88089 /* Assets.xcassets */,
@@ -138,6 +155,34 @@
 				42CDCBE82950D88B00B88089 /* MelonUITestsLaunchTests.swift */,
 			);
 			path = MelonUITests;
+			sourceTree = "<group>";
+		};
+		42CDCC022950DA9500B88089 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				42CDCC032950DB8200B88089 /* AuthService.swift */,
+				42CDCC092950DEFE00B88089 /* RegistrationService.swift */,
+				42CDCC0F2950E0F900B88089 /* ImageService.swift */,
+				42CDCC112950E42800B88089 /* StorageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		42CDCC052950DCC600B88089 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42CDCC062950DCDA00B88089 /* UserData.swift */,
+				42CDCC0B2950E01600B88089 /* LocalImage.swift */,
+				42CDCC0D2950E0AD00B88089 /* StorageImage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		42CDCC082950DEE100B88089 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +326,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42CDCC042950DB8200B88089 /* AuthService.swift in Sources */,
+				42CDCC102950E0F900B88089 /* ImageService.swift in Sources */,
+				42CDCC0E2950E0AD00B88089 /* StorageImage.swift in Sources */,
+				42CDCC0C2950E01600B88089 /* LocalImage.swift in Sources */,
+				42CDCC0A2950DEFE00B88089 /* RegistrationService.swift in Sources */,
 				42CDCBCE2950D88A00B88089 /* ContentView.swift in Sources */,
+				42CDCC072950DCDA00B88089 /* UserData.swift in Sources */,
+				42CDCC122950E42800B88089 /* StorageService.swift in Sources */,
 				42CDCBCC2950D88A00B88089 /* MelonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
